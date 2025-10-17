@@ -12,7 +12,7 @@
 <details>
   <summary><b>Heroku Deployment</b></summary>
   <p>
-    <a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousX1025/StringGenBot">
+    <a href="https://dashboard.heroku.com/new?template=https://github.com/yadavanu63/StringGenBot">
       Click here to deploy on Heroku
     </a>
   </p>

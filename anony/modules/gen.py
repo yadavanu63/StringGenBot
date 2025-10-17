@@ -95,7 +95,7 @@ async def _gen_session(_, cq: types.CallbackQuery):
          return await cq.message.reply_text(f"Error : <code>{str(ex)}</code>")
 
     try:
-        txt = "Here is your {0} session\n\n<code>{1}</code>\n\nA session generator bot by <a href={2}>Fallen Association</a>\n☠ <b>Note :</b> Don't share the session with anyone."
+        txt = "Here is your {0} session\n\n<code>{1}</code>\n\nA session generator bot by <a href={2}>Tapori 2.0 🤠</a>\n☠ <b>Note :</b> Don't share the session with anyone."
         if pyrogram:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -104,7 +104,7 @@ async def _gen_session(_, cq: types.CallbackQuery):
                 link_preview_options=types.LinkPreviewOptions(is_disabled=True),
             )
             try:
-                await client.join_chat("FallenAssociation")
+                await client.join_chat("Tapori 2.0 🤠")
             except:
                 pass
         else:
@@ -116,13 +116,13 @@ async def _gen_session(_, cq: types.CallbackQuery):
                 parse_mode="html",
             )
             try:
-                await client(JoinChannelRequest("@FallenAssociation"))
+                await client(JoinChannelRequest("https://t.me/tapori420_Official"))
             except:
                 pass
     except KeyError:
         pass
     try:
         await client.disconnect()
-        await cq.message.reply_text(f"Successfully generated your {sgen} string session.\n\nPlease check your saved messages for getting it.\n\nA string generator bot by <a href={SUPPORT_CHAT}>Fallen Association</a>.", reply_markup=buttons.pm_key(cq.from_user.id))
+        await cq.message.reply_text(f"Successfully generated your {sgen} string session.\n\nPlease check your saved messages for getting it.\n\nA string generator bot by <a href={SUPPORT_CHAT}>Tapori 2.0 🤠</a>.", reply_markup=buttons.pm_key(cq.from_user.id))
     except:
         pass
